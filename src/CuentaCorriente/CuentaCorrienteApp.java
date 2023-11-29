@@ -1,12 +1,12 @@
 package CuentaCorriente;
 
-    /*
-        Clase para comprobar el funcionamiento de la clase CuentaCorriente
-     */
-    public class CuentaCorrienteApp {
-        public static void main(String[] args) {
-            CuentaCorriente c1, c2;
-
+/*
+    Clase para comprobar el funcionamiento de la clase CuentaCorriente
+ */
+public class CuentaCorrienteApp {
+    public static void main(String[] args) {
+        CuentaCorriente c1, c2;
+        if(password.verificarContrasena()) {
             // Creación de 2 objetos de tipo CuentaCorriente
             c1 = new CuentaCorriente("11111111A", "David");
             c2 = new CuentaCorriente("22222222B", "Lorena");
@@ -28,8 +28,7 @@ package CuentaCorriente;
             // Comprobación del resultado de la operación
             if (c1.sacarDinero(80)) {
                 System.out.println("DINERO SACADO CON ÉXITO");
-            }
-            else {
+            } else {
                 System.out.println("NO HAY FONDOS SUFICIENTES");
             }
 
@@ -41,11 +40,14 @@ package CuentaCorriente;
             // Comprobación del resultado de la operación
             if (c2.sacarDinero(60)) {
                 System.out.println("DINERO SACADO CON ÉXITO");
-            }
-            else {
+            } else {
                 System.out.println("NO HAY FONDOS SUFICIENTES");
             }
+
+        }else{
+            System.out.println("Contraseña incorrecta");
         }
     }
+}
 
 
